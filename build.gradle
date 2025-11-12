@@ -29,6 +29,7 @@ subprojects {
         maven { url "https://maven.parchmentmc.org" }
         maven { url "https://maven.minecraftforge.net" }
         maven { url "https://cursemaven.com" }
+        maven { url "https://jitpack.io" }
         flatDir { dirs "/libs" }
     }
 
@@ -41,7 +42,8 @@ subprojects {
 
         mappings loom.layered() {
             officialMojangMappings()
-            parchment("org.parchmentmc.data:parchment-${rootProject.minecraft_version}:${rootProject.parchment_version}")
+            // Parchment mappings not available for 1.21, using only official mappings
+            // parchment("org.parchmentmc.data:parchment-${rootProject.minecraft_version}:${rootProject.parchment_version}")
         }
     }
 

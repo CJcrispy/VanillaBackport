@@ -11,4 +11,3 @@ rootProject.name = 'vanillabackport'
 
 include 'common'
 include 'fabric'
-include 'neoforge'
